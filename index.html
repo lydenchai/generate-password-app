@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Password App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Generate Password App</h2>
+      <div id="password-container">
+        <label for="password-length">Password Length</label>
+        <br />
+        <div class="input-length">
+          <input type="number" id="password-length" value="" />
+          <button onclick="clearInputs()" class="clear-btn">
+            <img src="./imgs/close-icon.svg" height="15" alt="" />
+          </button>
+        </div>
+        <br />
+        <div class="options">
+          <label for="uppercase" onclick="toggleCheckbox('uppercase')">
+            <input type="checkbox" id="uppercase" />
+            <span>Uppercase</span>
+          </label>
+          <label for="lowercase" onclick="toggleCheckbox('lowercase')">
+            <input type="checkbox" id="lowercase" />
+            <span>Lowercase</span>
+          </label>
+          <label for="numbers" onclick="toggleCheckbox('numbers')">
+            <input type="checkbox" id="numbers" />
+            <span>Number</span>
+          </label>
+          <label for="symbols" onclick="toggleCheckbox('symbols')">
+            <input type="checkbox" id="symbols" />
+            <span>Symbol</span>
+          </label>
+        </div>
+        <br />
+        <div class="buttons">
+          <button onclick="generatePassword()" class="generate-btn">
+            <img src="./imgs/generate-icon.svg" width="20" height="20" alt="" />
+            <div>Generate</div>
+          </button>
+          <button onclick="copyToClipboard()" class="copy-btn">
+            <img src="./imgs/copy-icon.svg" width="20" height="20" alt="" />
+            <div>Copy</div>
+          </button>
+        </div>
+        <br />
+        <textarea id="password" readonly></textarea>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
