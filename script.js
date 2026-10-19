@@ -3,7 +3,7 @@ const CHARSETS = {
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   numbers: "0123456789",
-  symbols: "!@#$%^&*()_+-=[]{}|;:,.<>?",
+  symbols: "!@#$%^&*?",
 };
 
 const AMBIGUOUS_CHARS = new Set(["i", "l", "1", "I", "L", "o", "0", "O"]);
