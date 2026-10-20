@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Generator</title>
+    <title>Free Password Generator</title>
     <meta
       name="description"
       content="A simple, fast, and secure password generator with customizable options."
@@ -43,6 +43,78 @@
             </svg>
           </button>
         </header>
+
+        <!-- Account / Target Details (Optional) -->
+        <div class="credentials-group">
+          <div class="input-field-group">
+            <div class="input-label-row">
+              <label for="username-input" class="input-label">User Name / Email</label>
+              <span class="optional-pill">Optional</span>
+            </div>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <input
+                type="text"
+                id="username-input"
+                class="text-input"
+                placeholder="name@email.com or username"
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="User name or email (optional)"
+              />
+              <button
+                type="button"
+                id="clear-username-btn"
+                class="input-clear-btn hidden"
+                title="Clear username"
+                aria-label="Clear username"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="input-field-group">
+            <div class="input-label-row">
+              <label for="website-input" class="input-label">Website</label>
+              <span class="optional-pill">Optional</span>
+            </div>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+              <input
+                type="text"
+                id="website-input"
+                class="text-input"
+                placeholder="example.com or service name"
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Website (optional)"
+              />
+              <button
+                type="button"
+                id="clear-website-btn"
+                class="input-clear-btn hidden"
+                title="Clear website"
+                aria-label="Clear website"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
 
         <!-- Password Display -->
         <div class="password-field">
